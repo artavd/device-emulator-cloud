@@ -1,0 +1,9 @@
+rootProject.name = 'device-emulator-cloud'
+
+include 'gateway'
+include 'configuration'
+include 'services:auth-service'
+include 'services:account-service'
+
+project(':services:auth-service').name = 'auth-service'
+project(':services:account-service').name - 'account-service'
