@@ -1,0 +1,12 @@
+version: '2'
+services:
+  config:
+    image: sbl.devices.cloud/configuration
+    ports:
+      - 8888:8888
+
+  gateway:
+    image: sbl.devices.cloud/gateway
+    ports:
+      - 8080:8080
+    restart: always
